@@ -24,7 +24,7 @@ const main = () => {
 
 const reset = () => {
   axios
-    .get(baseURL + "reset")
+    .get("/reset")
     .then((res) => {
       for (let i = 0; i < res.data.length; i++) {
         let { Dimension } = res.data[i];

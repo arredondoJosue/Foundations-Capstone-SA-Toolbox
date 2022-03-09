@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const axios = require("axios").default;
+// const axios = require("axios").default;
 const app = express();
 const ctrl = require("./controller");
 const path = require("path");
