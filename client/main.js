@@ -66,7 +66,7 @@ const showSids = (obj) => {
   text = text.trim().replaceAll(/\t/g || /\s/g, ",");
   pasteArea.textContent = text;
 
-  axios.get(baseURL + "getdb").then((res) => {
+  axios.get("/getdb").then((res) => {
     let dimDB = res.data;
     submitGenerate(dimDB, obj);
   });
