@@ -100,7 +100,7 @@ const updateBM = (e, inputs, c, iIt) => {
     itteration: iIt
 }
   axios
-    .put('update', updateData)
+    .put('/update', updateData)
     .then((res) => {
         let {inputText, itteration} = res.data
 

@@ -24,7 +24,7 @@ module.exports = {
     }),
     update: ('/update', (req, res) => {
         let {inputText, itteration} = req.body
-        inputText = inputText.replace(/["',]/g,'').replaceAll(' ',',')
+        inputText = inputText.trim().replace(/["',]/g,'').replaceAll(' ',',')
         
         const update = {
             inputText: inputText.split(','),
