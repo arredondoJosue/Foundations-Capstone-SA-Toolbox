@@ -22,9 +22,9 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../client/index.html"));
 });
 
+app.use(express.static(path.join(__dirname, "../")));
 app.use(express.static(path.join(__dirname, "/../client")));
 app.use(express.static(path.join(__dirname, "/../client/main.js")));
-app.use(express.static(path.join(__dirname, "/Working-files/client/index.css")));
 
 const port = process.env.PORT || 5400;
 
