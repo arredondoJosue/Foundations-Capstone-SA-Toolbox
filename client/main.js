@@ -14,7 +14,7 @@ const errCallback = (err) => console.log(err);
 
 const main = () => {
   axios
-    .get(baseURL)
+    .get('/main')
     .then((res) => {
       console.log("hit main, connected to server");
       console.log(res.data);

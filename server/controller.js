@@ -2,7 +2,7 @@ const dimensionsDB = require('./dimensions-db.json')
 const dbReset = require('./db-reset.json')
 
 module.exports = {
-    connect: ("/", (req, res) => {
+    connect: ("/main", (req, res) => {
         let test = 'Server Connected with Front End'
         res.status(200).send(test)
     }),

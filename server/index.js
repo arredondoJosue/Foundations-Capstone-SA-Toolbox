@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, "/client")));
 
 const port = process.env.PORT || 5400;
 
-app.get("/", ctrl.connect);
+app.get("/main", ctrl.connect);
 app.get("/reset", ctrl.reset);
 app.put('/formatsids', ctrl.generateClick)
 app.get('/getdb', ctrl.db)
