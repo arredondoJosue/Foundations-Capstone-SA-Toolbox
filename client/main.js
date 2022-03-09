@@ -53,7 +53,7 @@ const submit = () => {
     formattedSids: text,
   };
   axios
-    .put(baseURL + "formatsids", pastedSidsObj)
+    .put("/formatsids", pastedSidsObj)
     .then((res) => {
       let formattedSids = res.data;
       showSids(formattedSids);
@@ -100,7 +100,7 @@ const updateBM = (e, inputs, c, iIt) => {
     itteration: iIt
 }
   axios
-    .put(baseURL + 'update', updateData)
+    .put('update', updateData)
     .then((res) => {
         let {inputText, itteration} = res.data
 
