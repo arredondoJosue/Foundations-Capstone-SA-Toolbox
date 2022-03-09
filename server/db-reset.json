@@ -1,0 +1,46 @@
+[
+    {
+        "Dimension": "Meaning",
+        "SIDs": ["S56","S142","S146","S107"]
+    },
+    {
+        "Dimension": "Autonomy",
+        "SIDs": ["S34","S143","S9","S147"]
+    },
+    {
+        "Dimension": "Growth",
+        "SIDs": ["S23","S73","S144","S17"]
+    },
+    {
+        "Dimension": "Impact",
+        "SIDs": ["S48","S70","S145","S41"]
+    },
+    {
+        "Dimension": "Connection",
+        "SIDs": ["S30","S139","S22","S25","S148"]
+    },
+    {
+        "Dimension": "Anchor",
+        "SIDs": ["S47","S49","S84","S43","S44"]
+    },
+    {
+        "Dimension": "Attrition",
+        "SIDs": ["S7","S43","S44"]
+    },
+    {
+        "Dimension": "Voice",
+        "SIDs": ["S127","S121","S155"]
+    },
+    {
+        "Dimension": "Belonging",
+        "SIDs": ["S25","S103","S148"]
+    },
+    {
+        "Dimension": "Growth Opportunities",
+        "SIDs": ["S73","S17","S33"]
+    },
+    {
+        "Dimension": "Organization Commitment",
+        "SIDs": ["S162","S163","S165"]
+    }
+]

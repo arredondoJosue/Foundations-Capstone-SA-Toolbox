@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SA-Toolbox</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="demo.css" />
+    <script defer src="/js"></script>
+    <script defer src="/css"></script>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a style="float: right" id="dw">dw</a></li>
+        <li><a href="index.html">SID SETUP</a></li>
+        <li><a class="active" href="demo.html">DEMOGRAPHICS</a></li>
+        <!-- <li><a href="analysis.html">ANALYSIS</a></li> -->
+        <li>
+          <a
+            style="position: absolute; top: 65px; right: 5px"
+            id="reset"
+            href="#"
+            >RESET</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="paste paste-sids">
+        <h2 class="subtitles">Paste Demographics into text box below.</h2>
+        <textarea placeholder="Paste here" id="paste-sid-box"></textarea>
+        <div class="center-button">
+          <button id="submit-sid">Submit</button>
+        </div>
+      </section>
+
+      <section class="demo-cards">
+        <div class="container standardC">
+          <h2 class="card-title">Demographics</h2>
+        </div>
+
+        <div class="container deiC">
+          <div class="card-stack">
+            <h2 class="card-title">DEI Demographics</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="demo.js"></script>
+  </body>
+</html>

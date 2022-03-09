@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA-Toolbox</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <script defer src="/js"></script>
+    <script defer src="/css"></script>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a style="float:right" class="dw" id="dw">dw</a></li>
+            <li><a class="active" href="index.html">SID SETUP</a></li>
+            <li><a href="demo.html">DEMOGRAPHICS</a></li>
+            <!-- <li><a href="analysis.html">ANALYSIS</a></li> -->
+            <li>
+                <a
+                  style="position: absolute; top: 65px; right: 5px"
+                  id="reset"
+                  href="#"
+                  >RESET</a
+                >
+              </li>
+        </ul>
+    </header>
+    
+    <main>
+            <section class="MAGIC">
+                <div class="paste-sids">
+                    <h2 class="subtitles">Paste SID's into text box below.</h2>
+                    <textarea placeholder="Paste here" id="paste-sid-box"></textarea>
+                    <div>
+                        <button id="submit-sid">Generate</button>
+                    </div>
+                    <div class="sid-output">
+                        <p id="formatted-sids">Sample Text</p>
+                    </div>
+                </div>
+
+                <div class="All-BM-Cards MEANING">
+                    <h6 class="card-column-header">MEANING</h6>
+                    <div class="card-stack">
+                        <div class="card">
+                            <div class="card-body">
+                                <input class="card-text" placeholder="S56,S142,S146,S107"></input>
+                                <button class="update-sid">update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="All-BM-Cards AUTONOMY">
+                <h6 class="card-column-header">AUTONOMY</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S34,S143,S9,S147"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="All-BM-Cards GROWTH">
+                <h6 class="card-column-header">GROWTH</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S23,S73,S144,S17"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="All-BM-Cards IMPACT">
+                <h6 class="card-column-header">IMPACT</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S48,S70,S145,S41"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="All-BM-Cards CONNECTION">
+                <h6 class="card-column-header">CONNECTION</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S30,S139,S22,S25,S148"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <br>
+                <hr class="line">
+
+                <div class="All-BM-Cards ANCHOR">
+                <h6 class="card-column-header">ANCHOR</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S47,S49,S84,S43,S44"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="All-BM-Cards ATTRITION">
+                <h6 class="card-column-header">ATTRITION</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S7,S43,S44"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <br>
+                <hr class="line">
+
+
+                <div class="All-BM-Cards VOICE">
+                <h6 class="card-column-header">VOICE</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S127,S121,S155"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="All-BM-Cards BELONGING">
+                <h6 class="card-column-header">BELONGING</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S25,S103,S148"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="All-BM-Cards GROWTH-OPPORTUNITIES">
+                <h6 class="card-column-header">GROWTH OPPORTUNITIES</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S73,S17,S33"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="All-BM-Cards ORGANIZATIONAL-COMMITMENT">
+                <h6 class="card-column-header">ORGANIZATION COMMITMENT</h6>
+                <div class="card-stack">
+                    <div class="card">
+                        <div class="card-body">
+                            <input class="card-text" placeholder="S162,S163,S165"></input>
+                            <button class="update-sid">update</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <br>
+                <hr class="line last-line">
+            </section>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+main{
+    justify-content: center;    
+}
+
+#reset{
+    color: #ee7625;
+    border: 1px solid #ee7625;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.MAGIC{
+    word-break: break-all;
+}
+
+#submit-sid{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

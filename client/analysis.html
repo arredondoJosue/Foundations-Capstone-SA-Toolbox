@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SA-Toolbox</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="analysis.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="/Working-files/node_modules/chartist/dist/chartist.css"
+    /> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script defer src="analysis.js"></script>
+    <!-- <script defer src="/SA-Team-Toolbox/Working-files/client/styles.css"></script> -->
+    <!-- <script defer src="/Working-files/node_modules/chartist/dist/chartist.js"></script> -->
+    <script defer src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script defer>
+      new Chartist.Bar(
+        "#engagement",
+        {
+          labels: ["Q1", "Q2", "Q3", "Q4"],
+          series: [
+            [800000, 1200000, 1400000, 1300000],
+            [200000, 400000, 500000, 300000],
+            [100000, 200000, 400000, 600000],
+          ],
+        },
+        {
+          stackBars: true,
+          axisY: {
+            labelInterpolationFnc: function (value) {
+              return value / 1000 + "k";
+            },
+          },
+        }
+      ).on("draw", function (data) {
+        if (data.type === "bar") {
+          data.element.attr({
+            style: "stroke-width: 30px",
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a id="dw">dw</a></li>
+        <li><a href="index.html">SID SETUP</a></li>
+        <li><a href="demo.html">DEMOGRAPHICS</a></li>
+        <li><a class="active" href="analysis.html">ANALYSIS</a></li>
+        <li>
+          <a
+            style="position: absolute; top: 65px; right: 5px"
+            id="export"
+            href="#"
+            >EXPORT</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="paste-sids">
+        <!-- <h2>File Upload</h2> -->
+
+        <div id="dropbox">
+          <div class="dropbox-body">
+            <!-- <p class="lead">No Plugins <b>Just Javascript</b></p> -->
+            <p>
+              Click on the "Choose File" button to upload a file
+              <b> OR </b> Drag-&-Drop a file here:
+            </p>
+            <!-- <p> <b>OR</b></p>
+                    <p>Drag & Drop a file here:</p> -->
+            <input
+              type="file"
+              id="fileElem"
+              multiple
+              accept="xlsx/*"
+              style="display: none"
+            />
+          </div>
+        </div>
+        <button id="fileSelect">Choose File</button>
+      </div>
+
+      <div class="MAGIC">
+        <div class="All-BM-Cards MEANING">
+          <div class="card-stack">
+            <div class="card w-50">
+              <div class="card-body" id="overall">
+                <img
+                  src="https://png.pngtree.com/png-vector/20190730/ourlarge/pngtree-pie-chart-isometric-illustration-concept-modern-flat-design-concept-of-png-image_1641115.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="All-BM-Cards AUTONOMY">
+          <div class="card-stack">
+            <div class="card w-50">
+              <div class="card-body ct-chart ct-minor-seventh" id="dimensions">
+                <!-- <img src="https://png.pngtree.com/png-vector/20190730/ourlarge/pngtree-pie-chart-isometric-illustration-concept-modern-flat-design-concept-of-png-image_1641115.jpg"/> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="All-BM-Cards GROWTH">
+          <div class="card-stack">
+            <div class="card w-50">
+              <div class="card-body ct-minor-seventh" id="parti">
+                <img
+                  src="https://png.pngtree.com/png-vector/20190730/ourlarge/pngtree-pie-chart-isometric-illustration-concept-modern-flat-design-concept-of-png-image_1641115.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="All-BM-Cards IMPACT">
+          <div class="card-stack">
+            <div class="card w-50">
+              <div class="card-body ct-minor-seventh" id="engagement">
+                <!-- <img
+                  src="https://png.pngtree.com/png-vector/20190730/ourlarge/pngtree-pie-chart-isometric-illustration-concept-modern-flat-design-concept-of-png-image_1641115.jpg"
+                /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="All-BM-Cards IMPACT">
+          <div class="card-stack">
+            <div class="card w-50">
+              <div class="card-body ct-minor-seventh" id="top-five">
+                <img
+                  src="https://png.pngtree.com/png-vector/20190730/ourlarge/pngtree-pie-chart-isometric-illustration-concept-modern-flat-design-concept-of-png-image_1641115.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="All-BM-Cards IMPACT">
+          <div class="card-stack">
+            <div class="card w-50">
+              <div class="card-body ct-minor-seventh" id="bottom-five">
+                <img
+                  src="https://png.pngtree.com/png-vector/20190730/ourlarge/pngtree-pie-chart-isometric-illustration-concept-modern-flat-design-concept-of-png-image_1641115.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+  </body>
+</html>
