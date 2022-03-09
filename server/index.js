@@ -23,6 +23,8 @@ app.get("/", function (req, res) {
 });
 
 app.use(express.static(path.join(__dirname, "/../client")));
+app.use(express.static(path.join(__dirname, "/../client/main.js")));
+app.use(express.static(path.join(__dirname, "/Working-files/client/index.css")));
 
 const port = process.env.PORT || 5400;
 
